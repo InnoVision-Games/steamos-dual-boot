@@ -1,0 +1,13 @@
+SteamOS dual boot cheat sheet
+
+Command 1 - Check Partition Table:
+sudo fdisk -l /dev/nvme0n1
+
+Comand 2 - Fix Partition Table:
+sudo fdisk /dev/nvme0n1
+
+Command 3 - Fix EFI boot loader:
+sudo efibootmgr -c -d /dev/nvme0n1 -p 1 -L "SteamOS" -l "\EFI\steamos\steamcl.efi"
+
+Command 4 - Adjust Windows boot loader:
+Command 4 - bcdedit.exe -set {globalsettings} highestmode on
