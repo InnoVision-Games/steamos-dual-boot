@@ -9,5 +9,5 @@ sudo fdisk /dev/nvme0n1
 Command 3 - Fix EFI boot loader:
 sudo efibootmgr -c -d /dev/nvme0n1 -p 1 -L "SteamOS" -l "\EFI\steamos\steamcl.efi"
 
-Command 4 - Adjust Windows boot loader:
+Command 4 - Adjust Windows boot configuration data:
 Command 4 - bcdedit.exe -set {globalsettings} highestmode on
