@@ -22,3 +22,5 @@ sudo efibootmgr -c -d /dev/nvme0n1 -p 1 -L "SteamOS" -l "\EFI\steamos\steamcl.ef
 ```
 bcdedit.exe -set {globalsettings} highestmode on
 ```
+
+# Note that this eventually will become a set of software tools to add some automation to help with the dual boot setup, if there is enough interest.
